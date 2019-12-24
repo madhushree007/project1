@@ -1,1 +1,57 @@
-
+body {
+  font-family: sans-serif;
+  background-color: #f6f6f6;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}
+a.logo {
+  font-size: 2rem;
+  color: #ef0101;
+  text-decoration: none;
+  font-weight: 500;
+  font-style: italic;
+}
+nav {
+  display: flex;
+  height: 60px;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 400px;
+}
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+}
+section {
+  color: #f6f6f6;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 500;
+  font-style: italic;
+}
+#about-me {
+  background-color: #0696de;
+}
+#why {
+  background-color: #00c59f;
+}
+#journey {
+  background-color: #0696de;
+}
+#contact {
+  background-color: #00c59f;
+}
+#contact div.child {
+  width: 50%;
+}
