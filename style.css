@@ -4,16 +4,23 @@ body {
   margin: 0;
   padding: 0;
 }
+p {
+  font-size: 22px;
+  line-height: 1.5;
+}
 .container {
   width: 1100px;
   margin: 0 auto;
 }
 a.logo {
   font-size: 2rem;
-  color: #ef0101;
+  color: #666;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   font-style: italic;
+  height: 60px;
+  display: flex;
+  align-items: flex-end;
 }
 nav {
   display: flex;
@@ -22,17 +29,36 @@ nav {
   justify-content: space-between;
   width: 400px;
 }
+nav a {
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px;
+  color: #444;
+}
+nav a:hover {
+  background-color: #00c59f;
+  color: #f2f2f2;
+}
 .top-header {
   display: flex;
   justify-content: space-between;
   height: 100px;
 }
 section {
-  color: #f6f6f6;
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+#about-me,
+#links {
+  color: #fff;
+}
+blockquote {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.6;
+  text-align: center;
 }
 section h2 {
   text-align: center;
@@ -40,18 +66,196 @@ section h2 {
   font-weight: 500;
   font-style: italic;
 }
+
 #about-me {
   background-color: #0696de;
+  height: 80vh;
 }
 #why {
   background-color: #00c59f;
+  padding: 40px 0;
+  color: #fff;
 }
-#journey {
+#links {
   background-color: #0696de;
+  padding: 40px 0;
+  text-align: center;
+}
+#links h2 {
+  font-size: 28px;
+}
+#links p {
+  text-indent: 40px;
+  padding-bottom: 40px;
+}
+#links a {
+  color: #fff;
+  text-decoration: none;
+}
+#links a:hover {
+  text-decoration: underline;
+}
+#links small {
+  font-style: italic;
+  font-size: 16px;
 }
 #contact {
   background-color: #00c59f;
+  color: #fff;
+  height: 60vh;
+  text-align: center;
 }
-#contact div.child {
+#contact .content {
+  display: flex;
+}
+#contact .content .child {
   width: 50%;
+}
+#contact a {
+  text-decoration: none;
+  color: #fff;
+}
+#contact a:hover {
+  text-decoration: underline;
+}
+#projects section {
+  color: #000 !important;
+}
+#projects {
+  height: 100vh;
+}
+#why ul li {
+  font-size: 22px;
+  list-style: square;
+  line-height: 1.5;
+  padding-bottom: 20px;
+}
+footer p {
+  font-size: 14px;
+  font-style: italic;
+  text-align: right;
+  padding-right: 40px;
+  color: #666;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 600px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+  background-color: #00c59f;
+}
+.prev {
+  left: -41px;
+  border-radius: 3px 0 0 3px;
+}
+.next {
+  right: -42px !important;
+  border-radius: 0 3px 3px 0 !important;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 4px;
+  right: 0;
+  background-color: #666;
+  opacity: 3;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    width: 100%;
+    padding: 0 10%;
+  }
 }
