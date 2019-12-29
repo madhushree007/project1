@@ -8,14 +8,14 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header>
+     <header>
             <div class="container top-header">
             <a href="#" class="logo">Madhushree Gupta</a>
             <nav>
                 <a href="#about-me">About Me</a>
                 <a href="#why">Why</a>
                 <a href="#projects">Projects</a>
-                <a href="#contact">Contact Me</a>
+                <a href="#links">Links</a>
             </nav>
             </div>
         </header>
@@ -24,7 +24,7 @@
             <section id="about-me">
                 <div class="container">
                     <h2>About Myself</h2>
-                    <p>My name is Madhushree Gupta and I am 39 years old. I have been working as a fontend developer for years. I was on career break for more than 5 years and now I am trying to learn Javascript and get back to work.</p>
+                    <blockquote>"My name is Madhushree Gupta and I am a frontend developer. I have been working as a freelancer. My expertise is in HTML and CSS. I used to convert PSD design into working responsive web pages using Bootstrap. I have also developed few websites using wordpress."</blockquote>
                 </div>
 
             </section>
@@ -33,13 +33,14 @@
             <!-- Why I want to join FAC section starts here. -->
             <section id="why">
                     <div class="container">
-                        <h2>Why I do want to join Founder and Coders</h2>
-                        <p>There are quite few reason why I want to join Founder and Coders which are</p>
+                        <h2>Why do I want to join Founder and Coders</h2>
                             <ul>
-                                <li></li>
-                                <li>I am struggling with online courses with no success.</li>
-                                <li>I want to be a programmer and I want to enroll in an intensive couse.</li>
-                                <li>It is near to my place</li>
+                                <li>I was on career break for more than 5 years and I could not keep up with the current technologies. Programming hasn't been my strength, now I am getting back into career so I want to make programming my core skill.</li>
+                                <li>I tried to do online courses to learn JS however I could not learn successfully. I feel, I need classroom teaching where
+                                there is face to face discussions on subject.</li>
+                                <li>In current trends my only knowledge of HTML and CSS is not enough. I would like to learn Javascript to sustain in my career.</li>
+                                <li>I have been to meetup at Founder and Coders and I liked the peer led classroom programme. A peer led programme where senior students pass on their skills to junior students. </li>
+                                <li>I am highly motivated to join FAC. I live very close to Founder and Coders office which is convenient for me. I will find Myself lucky if I get a place. </li>
                             </ul>
                     </div>
             </section>
@@ -49,6 +50,43 @@
             <section id="projects">
                 <div class="container">
                     <h2>Projects</h2>
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container">
+                    
+                        <!-- Full-width images with number and caption text -->
+                        <div class="mySlides fade">
+                            <div class="numbertext">1 / 4</div>
+                            <img src="images/rajbhog.jpg" style="width:100%">
+                        </div>
+                    
+                        <div class="mySlides fade">
+                            <div class="numbertext">2 / 4</div>
+                            <img src="images/jprest.jpg" style="width:100%">
+                        </div>
+                    
+                        <div class="mySlides fade">
+                            <div class="numbertext">3 / 4</div>
+                            <img src="images/chakra.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">4 / 4</div>
+                            <img src="images/strap.jpg" style="width:100%">
+                        </div>
+                    
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+                    
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                    </div>
                     
                 </div>
             
@@ -56,29 +94,81 @@
             <!-- About Me Ends Here -->
 
             <!-- About Me Starts here. This section explain about me -->
-            <section id="contact">
+            <section id="links">
                 <div class="container">
-                    <h2>Contact Me</h2>
-                    <div class="child">
-                        Email: <a href="mailto: madhushree25@gmail.com">madhushree25@gmail.com</a><br />
-                        Call: <a href="tel: 07424797407">07424797407</a>
-                    </div>
-                    <div class="child">
-                        <address>
-                            7 Bickleigh House
-                            Frogwell Close
-                            London
-                            N15 6ED
-                        </address>
-                    </div>
+                    <h2>
+                        My GitHub Repo 
+                    </h2>
+                    <p><a href="https://github.com/madhushree007/project1" target="_blank">https://github.com/madhushree007/project1</a></p>
+                    <h2>
+                        My FreeCodeCamp Link
+                    </h2>
+                    
+                    <p><a href="https://www.freecodecamp.org/madhusahu" target="_blank">https://www.freecodecamp.org/madhusahu</a></p>
+                    <h2>
+                        MyCodewars Link
+                    </h2>
+                    <p><a href="https://www.codewars.com/users/madhushree007" target="_blank">https://www.codewars.com/users/madhushree007</a><br /><small>(I have reached 6kyu and still working on it.)</small></small></p>
                 </div>
             
             </section>
-            <!-- About Me Ends Here -->
+            <!-- Links Ends Here -->
+
+            <!-- Contact Section starts here -->
+            <section id="contact">
+                <div class="container">
+                    <h2>Contact Me</h2>
+                    <div class="content">
+                        <div class="child">
+                        <p> Email: <a href="mailto: madhushree25@gmail.com">madhushree25@gmail.com</a><br />
+                            Call: <a href="tel: 07424797407">07424797407</a></p>
+                        </div>
+                        <div class="child">
+                            <p>
+                                7 Bickleigh House<br />
+                                Frogwell Close<br />
+                                London<br />
+                                N15 6ED
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Contact section ends here -->
 
         </main>
         <footer>
-
+           <p>Designed and Developed by Madhushree Gupta</p>
         </footer>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
     </body>
 </html>
