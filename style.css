@@ -264,4 +264,10 @@ footer p {
   #about-me {
     height: auto;
   }
+  a.logo {
+    height: auto;
+  }
+  .top-header {
+    height: auto;
+  }
 }
